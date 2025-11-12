@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(/assets/img/banner/banner.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ===== NAVBAR ===== */
+.nav-about {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div div h2 {
+  font-size: 40px;
+  margin: 15px 0 15px 80px;
+}
+
+nav div div ul {
+  display: flex;
+  gap: 45px;
+  font-size: 18px;
+  padding-right: 50px;
+}
+
+nav div div ul li {
+  list-style: none;
+}
+
+.nav-item1 ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item1 ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #00bfff;
+  transition: width 0.3s ease;
+}
+
+.nav-item1 ul li a:hover::after {
+  width: 100%;
+}
+
+/* ===== ABOUT BODY ===== */
+.about-body h2::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  display: inline-block;
+  background: #00bfff;
+  margin: 4px 10px;
+}
+
+.about-body .abt-sec {
+  background-color: black;
+  border-radius: 5px;
+  width: 1150px;
+  height: auto;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.about-body {
+  color: white;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-bottom: 90px;
+  padding-bottom: 20px;
+}
+
+.about-body .abt-sec div {
+  padding-left: 40px;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0 40px 40px 0;
+}
+
+.contact-box {
+  background-color: #141414;
+  padding: 25px 25px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+  background-color: #202020;
+  transform: translateY(-5px);
+}
+
+
+/* Icon (left side) */
+.contact-box i {
+  color: white;
+  font-size: 22px;
+  min-width: 40px;
+  text-align: center;
+}
+.contact-box i:hover{
+  color: #00bfff;
+}
+ion-icon {
+  font-size: 30px;
+  color: #00bfff;
+     
+   
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Text section (right side) */
+.contact-box .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+/* Heading and text */
+.contact-box h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.contact-box p {
+  color: #aaa;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding-left: 0;
+}
+
+.social-icons a {
+  color: #00bfff;
+  font-size: 5px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00bfff;
+}
+
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+input[type=text],input[type=email]{
+  width: 507px;
+  height: 35px;
+  border-radius: 9px;
+  border: 1px solid #00bfff;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px ;
+}
+
+
+::placeholder {
+      color: #999; /* Example: light grey color */
+      font-size: 14px; /* Example: smaller font size */
+      opacity: 1; /* Ensures full opacity in Firefox */
+      
+    }
+
+.subject input[type=text]{
+  width: 1046px;
+}
+
+textarea {
+  width: 1065px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #00bfff;
+  border-radius: 8px;
+  color: white;
+  background-color: transparent;
+  resize: none;
+}
+
+button{
+  padding: 10px;
+  margin-top: 17px;
+  margin-left: 435px;
+  border: 1px solid #00bfff;
+  background-color: transparent;
+  color: #999;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button:hover{
+  color: white;
+
+}
+
+
+
+
+
+
+.cards .card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cards .card img {
+  width: 350px;
+  height: 195px;
+  display: block;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+/* Zoom + dark overlay */
+.cards .card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.4);
+}
+
+/* Dark overlay */
+.cards .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.cards .card:hover::before {
+  opacity: 1;
+}
+
+/* Corner brackets (with more gap & animated grow effect) */
+.cards .card::after {
+  content: "";
+  position: absolute;
+  inset: 18px; /* increased gap from border */
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.5); /* starts small */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cards .card:hover::after {
+  opacity: 1;
+  transform: scale(1); /* expands to full */
+  background:
+    linear-gradient(white, white) top left / 30px 2px no-repeat,
+    linear-gradient(white, white) top left / 2px 30px no-repeat,
+    linear-gradient(white, white) bottom right / 30px 2px no-repeat,
+    linear-gradient(white, white) bottom right / 2px 30px no-repeat;
+}
+
+/* Centered overlay content */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.card:hover .overlay-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Text styling */
+.overlay-content h2,
+.overlay-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.overlay-content p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+

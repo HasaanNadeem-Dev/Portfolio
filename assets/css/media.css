@@ -1,0 +1,78 @@
+
+@media (max-width: 768px) {
+
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main {
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  .main h1 {
+    font-size: 50px;
+  }
+  .span-main{
+    border-bottom: 3px solid #00A3FF;
+  }
+
+  .main p {
+    font-size: 22px;
+  }
+
+  .nav-list ul {
+    gap: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    padding-left: 50px;
+  }
+
+  .nav-icon a {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    font-size: 20px;
+    align-items: center;
+    
+  }
+  .nav-icon{
+    padding-left: 75px;
+    gap: 18px;
+  }
+}
+
+
+/* ===========================
+   💚 SMALL DEVICES (max-width: 500px)
+   =========================== */
+@media (max-width: 500px) {
+
+  .main {
+    margin-top: 70px;
+    margin-left: 15px;
+  }
+
+  .main h1 {
+    font-size: 20px;
+  }
+
+  .main p {
+    font-size: 10px;
+  }
+
+  .nav-list ul {
+    
+    align-items: start;
+    gap: 10px;
+  }
+
+  .nav-icon a {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+     border-radius: 50%;
+     align-items: center;
+  }
+}
